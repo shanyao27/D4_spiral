@@ -1,0 +1,29 @@
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.param-row {
+  display: flex;
+  gap: 20px;
+}
+.param-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  padding: 5px;
+  width: 80px;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 22px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 15px;
+}

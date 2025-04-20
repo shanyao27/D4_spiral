@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анимация смайлика по спирали</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="JavaScript/image.js"></script>
+    <script src="JavaScript/path.js"></script>
+    <script src="JavaScript/main.js"></script>
+</head>
+<body>
+    <div class="control-panel">
+        <div class="param-row">
+            <div class="param-group">
+                <label for="scaleStart">Начальный масштаб</label>
+                <input type="number" id="scaleStart" value="1" step="0.1">
+            </div>
+            
+            <div class="param-group">
+                <label for="rotateStart">Начальный угол</label>
+                <input type="number" id="rotateStart" value="0">
+            </div>
+
+            <div class="param-group">
+                <label for="duration">Длительность (мс)</label>
+                <input type="number" id="duration" value="3000">
+            </div>
+        </div>
+        
+        <div class="param-row">
+            <div class="param-group">
+                <label for="scaleEnd">Конечный масштаб</label>
+                <input type="number" id="scaleEnd" value="1" step="0.1">
+            </div>
+            
+            <div class="param-group">
+                <label for="rotateEnd">Конечный угол</label>
+                <input type="number" id="rotateEnd" value="0">
+            </div>
+        </div>
+        
+        <div class="buttons-row">
+            <button id="animateBtn">Запуск анимации</button>
+            <button id="clearBtn">Очистить</button>
+        </div>
+    </div>
+    
+    <svg></svg>
+</body>
+</html>
