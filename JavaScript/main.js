@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 };
             });
     }
+
     document.getElementById("animateBtn").addEventListener("click", function() {
         let duration = parseInt(document.getElementById("duration").value);
         let scaleStart = parseFloat(document.getElementById("scaleStart").value);
@@ -30,5 +31,10 @@ document.addEventListener("DOMContentLoaded", function() {
     
     document.getElementById("clearBtn").addEventListener("click", function() {
         svg.selectAll("*").remove();
+        document.getElementById("duration").value = 3000;
+        document.getElementById("scaleStart").value = 1;
+        document.getElementById("scaleEnd").value = 1;
+        document.getElementById("rotateStart").value = 0;
+        document.getElementById("rotateEnd").value = 0;
     });
 });
